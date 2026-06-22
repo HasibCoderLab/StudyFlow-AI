@@ -1,0 +1,75 @@
+2026-06-22 00:21:08:218 [31merror[39m: [31m400 - [[39m
+[31m  {[39m
+[31m    "origin": "string",[39m
+[31m    "code": "invalid_format",[39m
+[31m    "format": "email",[39m
+[31m    "pattern": "/^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$/",[39m
+[31m    "path": [[39m
+[31m      "body",[39m
+[31m      "email"[39m
+[31m    ],[39m
+[31m    "message": "Invalid email format"[39m
+[31m  },[39m
+[31m  {[39m
+[31m    "origin": "string",[39m
+[31m    "code": "too_small",[39m
+[31m    "minimum": 6,[39m
+[31m    "inclusive": true,[39m
+[31m    "path": [[39m
+[31m      "body",[39m
+[31m      "password"[39m
+[31m    ],[39m
+[31m    "message": "Password must be at least 6 characters"[39m
+[31m  }[39m
+[31m] - /api/auth/register - POST - ::1 [39m
+[31m Stack: Error: [[39m
+[31m  {[39m
+[31m    "origin": "string",[39m
+[31m    "code": "invalid_format",[39m
+[31m    "format": "email",[39m
+[31m    "pattern": "/^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$/",[39m
+[31m    "path": [[39m
+[31m      "body",[39m
+[31m      "email"[39m
+[31m    ],[39m
+[31m    "message": "Invalid email format"[39m
+[31m  },[39m
+[31m  {[39m
+[31m    "origin": "string",[39m
+[31m    "code": "too_small",[39m
+[31m    "minimum": 6,[39m
+[31m    "inclusive": true,[39m
+[31m    "path": [[39m
+[31m      "body",[39m
+[31m      "password"[39m
+[31m    ],[39m
+[31m    "message": "Password must be at least 6 characters"[39m
+[31m  }[39m
+[31m][39m
+[31m    at file:///D:/Coding/vibe-coding/StudyFlow-AI/backend/middleware/validate.js:21:17[39m
+[31m    at Layer.handle [as handle_request] (D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at next (D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\route.js:149:13)[39m
+[31m    at Route.dispatch (D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\route.js:119:3)[39m
+[31m    at Layer.handle [as handle_request] (D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\index.js:284:15[39m
+[31m    at router.process_params (D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\index.js:346:12)[39m
+[31m    at next (D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\index.js:280:10)[39m
+[31m    at router.handle (D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\index.js:175:3)[39m
+[31m    at router (D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\index.js:47:12)[39m
+2026-06-22 00:30:17:3017 [31merror[39m: [31m400 - body.email: Invalid email format, body.password: Password must be at least 6 characters - /api/auth/register - POST - ::1 [39m
+[31m Stack: Error: body.email: Invalid email format, body.password: Password must be at least 6 characters[39m
+[31m    at file:///D:/Coding/vibe-coding/StudyFlow-AI/backend/middleware/validate.js:21:17[39m
+[31m    at Layer.handle [as handle_request] (D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at next (D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\route.js:149:13)[39m
+[31m    at Route.dispatch (D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\route.js:119:3)[39m
+[31m    at Layer.handle [as handle_request] (D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\index.js:284:15[39m
+[31m    at router.process_params (D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\index.js:346:12)[39m
+[31m    at next (D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\index.js:280:10)[39m
+[31m    at router.handle (D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\index.js:175:3)[39m
+[31m    at router (D:\Coding\vibe-coding\StudyFlow-AI\backend\node_modules\express\lib\router\index.js:47:12)[39m
+2026-06-22 01:01:52:152 [31merror[39m: [31m401 - Invalid or expired refresh token. - /api/auth/refresh - POST - ::1 [39m
+[31m Stack: Error: Invalid or expired refresh token.[39m
+[31m    at Module.refreshUserTokens (file:///D:/Coding/vibe-coding/StudyFlow-AI/backend/services/authService.js:184:13)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)[39m
+[31m    at async file:///D:/Coding/vibe-coding/StudyFlow-AI/backend/controllers/authController.js:39:47[39m

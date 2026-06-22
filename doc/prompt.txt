@@ -1,0 +1,7 @@
+you act as 10 years experience of backend engineer
+so  তুমি আমাকে এখন 
+এর ফুল কোড  
+কোনটা, কেন ,কিভাবে ,কি কারণে 
+use  করলাম 
+
+সব গুলো ভালো করে বুঝিয়ে Doc  folder  এর ভিতরে md  ফাইল cerate  করে Prparly  include  করে দাও 
